@@ -17,5 +17,7 @@ namespace CProject.Objects
       RepeatCounter newRepeatCounter = new RepeatCounter("wood wood wood", "wood");
       Assert.Equal(3, newRepeatCounter.HowManyWords());
     }
+
+    
   }
 }

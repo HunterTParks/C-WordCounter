@@ -18,6 +18,7 @@ namespace CProject.Objects
 
     public int HowManyWords()
     {
+      _sentence.ToLower();
       _refactor = _sentence.Split(new [] {" "}, StringSplitOptions.RemoveEmptyEntries);
       Console.WriteLine(_refactor[0]);
       for(int i = 0; i <= _refactor.Length - 1; i++)
