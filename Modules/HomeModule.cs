@@ -9,6 +9,10 @@ namespace CProject.Objects
       Get["/"] = _ => {
         return View["index.cshtml"];
       };
+      Post["/result"] = _ => {
+        RepeatCounter newRepeatCounter = new RepeatCounter(Request.Form["sentence"], Request.Form["word"]);
+        return View["result.cshtml", newRepeatCounter];
+      };
     }
   }
 }

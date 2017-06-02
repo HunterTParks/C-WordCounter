@@ -16,6 +16,10 @@ namespace CProject.Objects
       _word = word;
     }
 
+    public string GetWord()
+    {
+      return _word;
+    }
     public int HowManyWords()
     {
       _sentence.ToLower();
