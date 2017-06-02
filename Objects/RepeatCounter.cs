@@ -25,7 +25,7 @@ namespace CProject.Objects
       Console.WriteLine(_sentence);
       _sentence = _sentence.ToLower();
       Console.WriteLine(_sentence);
-      _sentence = _sentence.Replace("[^0-9a-zA-Zws]+", "");
+      _sentence = _sentence.Replace("[^0-9a-zA-Z]+", "");
       Console.WriteLine(_sentence);
       _refactor = _sentence.Split(new [] {" "}, StringSplitOptions.RemoveEmptyEntries);
       Console.WriteLine(_refactor[0]);
