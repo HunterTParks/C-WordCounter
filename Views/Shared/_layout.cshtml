@@ -9,11 +9,19 @@
   <body>
     <div class = "col-md-1">
       <ul>
-        <li><a class="active" href="/">Index</li>
-        <li><a href = "/result">Results</li>
+        <li><a class="active" href="/">Index</a></li>
+        <li><a href = "/result">Results</a></li>
+        <li class = "dropdown">
+          <a href = "/" class="dropbtn">Back to homepage... again?</a>
+          <div class = "dropdown-content">
+            <a href = "/results/example1">First example</a>
+            <a href = "/results/example2">Second example</a>
+            <a href = "/results/example3">Third example</a>
+          </div>
+        </li>
       </ul>
     </div>
-    <div class="container" id = "outsideContainer">
+    <div class - "col-md-6">
       <div class = "container" id = "grad1">
         @RenderBody()
       </div>
