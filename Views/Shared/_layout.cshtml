@@ -7,8 +7,16 @@
     <title>C# Project</title>
   </head>
   <body>
-    <div class = "container" id = "grad1">
-      @RenderBody()
+    <div class = "col-md-1">
+      <ul>
+        <li><a class="active" href="/">Index</li>
+        <li><a href = "/result">Results</li>
+      </ul>
+    </div>
+    <div class="container" id = "outsideContainer">
+      <div class = "container" id = "grad1">
+        @RenderBody()
+      </div>
     </div>
   </body>
 </html>
