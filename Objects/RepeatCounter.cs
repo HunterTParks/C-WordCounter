@@ -20,6 +20,11 @@ namespace CProject.Objects
     {
       return _word;
     }
+    public string GetSentence()
+    {
+      return _sentence;
+    }
+    
     public int CountRepeats()
     {
       Console.WriteLine(_sentence);
@@ -34,9 +39,12 @@ namespace CProject.Objects
         if(_refactor[i] == _word)
         {
           counter++;
+          _refactor[i] = _refactor[i].ToUpper();
+          Console.WriteLine(_refactor[i]);
         }
       }
-      Console.WriteLine(counter);
+      _sentence = string.Join(" ", _refactor);
+      Console.WriteLine(_sentence);
       return counter;
     }
   }

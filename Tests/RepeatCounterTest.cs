@@ -17,12 +17,5 @@ namespace CProject.Objects
       RepeatCounter newRepeatCounter = new RepeatCounter("wood wood wood", "wood");
       Assert.Equal(3, newRepeatCounter.CountRepeats());
     }
-
-    // [Fact]
-    // public void RepeatCounter_displaysentenceinbold_string()
-    // {
-    //   RepeatCounter newRepeatCounter = new RepeatCounter("How much wood would a woodchuck chuck if a woodchuck could chuck wood?", "wood");
-    //   Assert.Equal("How much WOOD would a woodchuck chuck if a woodchuck could chuck WOOD?", newRepeatCounter.highlightWords());
-    // }
   }
 }
