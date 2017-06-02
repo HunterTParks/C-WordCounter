@@ -1,3 +1,10 @@
+body {
+  height: 3000px
+  background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(red, yellow, red); /* Standard syntax (must be last) */
+}
 #resultsDiv
 {
   margin-top: 50%;
@@ -18,21 +25,22 @@
 {
   0% {
     font-size: 25px;
+    /*transform: rotateY(150deg);*/
   }
   25% {
     font-size: 35px;
-    transform: rotate(25deg);
+    transform: rotateY(150deg);
   }
   50% {
     font-size: 25px;
-    transform: rotate(-25deg);
+    transform: rotateX(25deg);
   }
   75% {
     font-size: 35px:
-    transform: rotate(-25deg);
+    transform: rotateX(25deg);
   }
   100% {
     font-size: 25px;
-    transform: rotate(25deg);
+    transform: rotateX(25deg);
   }
 }
