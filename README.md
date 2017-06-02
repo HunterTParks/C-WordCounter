@@ -29,6 +29,16 @@ There are no known bugs at this point in times
 ### Support
 If you find any bugs, please email me at hunter.thomas.parks@gmail.com
 
+### Technologies used
+* HTML
+* CSS
+* C#
+* NANCY
+* RAZOR
+* BOOTSTRAP
+* ANIMATE.CSS https://daneden.github.io/animate.css/
+
+
 ### Copyright
 This software is licensed under the MIT license
 
