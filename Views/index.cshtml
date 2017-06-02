@@ -2,4 +2,16 @@
   Layout = "Shared/_layout.cshtml";
 }
 
-HOWDY
+<form action="/result" method="post">
+  <p>
+    <label for="sentence">Enter a sentence</label>
+    <input type="text" name="sentence">
+  </p>
+
+  <p>
+    <label for="word">Enter a word you would like to find in the sentence</label>
+    <input type="text" name="word">
+  </p>
+  
+  <button type="submit" name="button">Submit</button>
+</form>
