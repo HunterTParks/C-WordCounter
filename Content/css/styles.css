@@ -4,7 +4,7 @@ body {
   background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(red, yellow, red); /* Standard syntax (must be last) */
+  background: linear-gradient(green, yellow, green); /* Standard syntax (must be last) */
 }
 
 ul {
@@ -34,7 +34,7 @@ li a:hover:not(.active){
   color: white;
 }
 img {
-  width: 10px;
+  width: 100px;
 }
 
 .dropbtn {
@@ -74,49 +74,28 @@ li.dropdown {
   display: block;
 }
 
+#errorText
+{
+  font-size: 100px;
+}
 #resultsDiv
 {
   margin-top: 50%;
   margin-left: 25%;
+  position: relative;
 }
 #getSentence
 {
   margin-top: 5%;
+  font-size: 50px;
 }
 #CountAnimation
 {
   margin-left: 25%;
-  animation-name: animation;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
 }
 #error {
   display: block;
   text-align: center;
   margin-left: 20%;
   font-size: 1000px;
-}
-
-@keyframes animation
-{
-  0% {
-    font-size: 25px;
-    /*transform: rotateY(150deg);*/
-  }
-  25% {
-    font-size: 35px;
-    transform: rotateY(150deg);
-  }
-  50% {
-    font-size: 25px;
-    transform: rotateX(25deg);
-  }
-  75% {
-    font-size: 35px:
-    transform: rotateX(25deg);
-  }
-  100% {
-    font-size: 25px;
-    transform: rotateX(25deg);
-  }
 }
