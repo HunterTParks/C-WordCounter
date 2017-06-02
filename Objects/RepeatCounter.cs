@@ -7,7 +7,7 @@ namespace CProject.Objects
   {
     private string _sentence;
     private string _word;
-    // private char[] _refactor;
+    private string[] _refactor;
 
     public RepeatCounter(string sentence, string word)
     {
@@ -17,10 +17,9 @@ namespace CProject.Objects
 
     public string HowManyWords()
     {
-      // _refactor = _sentence.ToCharArray();
-      // _refactor = _refactor.ToString();
-      // Console.WriteLine(_refactor[0]);
-      return "wood";
+      _refactor = _sentence.Split(new [] {" "}, StringSplitOptions.RemoveEmptyEntries);
+      Console.WriteLine(_refactor[0]);
+      return _refactor[0];
     }
   }
 }
