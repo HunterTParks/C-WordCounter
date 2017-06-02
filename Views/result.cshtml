@@ -2,10 +2,12 @@
   Layout = "Shared/_layout.cshtml";
 }
 
-<p>
-  The amount of @Model.GetWord() there are is @Model.CountRepeats()
-</p>
+<div id = "resultsDiv">
+  <p>
+    The amount of @Model.GetWord() there are is <br><br><span id = "CountAnimation">@Model.CountRepeats()</span>
+  </p>
 
-<p>
-  @Model.GetSentence()
-</p>
+  <p id = "getSentence">
+    @Model.GetSentence()
+  </p>
+</div>
