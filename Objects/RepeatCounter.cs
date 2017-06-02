@@ -20,9 +20,13 @@ namespace CProject.Objects
     {
       return _word;
     }
-    public int HowManyWords()
+    public int CountRepeats()
     {
-      _sentence.ToLower();
+      Console.WriteLine(_sentence);
+      _sentence = _sentence.ToLower();
+      Console.WriteLine(_sentence);
+      _sentence = _sentence.Replace("[^0-9a-zA-Zws]+", "");
+      Console.WriteLine(_sentence);
       _refactor = _sentence.Split(new [] {" "}, StringSplitOptions.RemoveEmptyEntries);
       Console.WriteLine(_refactor[0]);
       for(int i = 0; i <= _refactor.Length - 1; i++)
