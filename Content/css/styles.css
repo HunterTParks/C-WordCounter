@@ -4,7 +4,7 @@ body {
   background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
-  background: repeating-linear-gradient(#D8E484, #D8E484); /* Standard syntax (must be last) */
+  background: linear-gradient(red, yellow, red); /* Standard syntax (must be last) */
 }
 
 ul {
@@ -32,6 +32,9 @@ li a.active {
 li a:hover:not(.active){
   background-color: #555;
   color: white;
+}
+img {
+  width: 10px;
 }
 
 .dropbtn {
@@ -86,6 +89,12 @@ li.dropdown {
   animation-name: animation;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+}
+#error {
+  display: block;
+  text-align: center;
+  margin-left: 20%;
+  font-size: 1000px;
 }
 
 @keyframes animation

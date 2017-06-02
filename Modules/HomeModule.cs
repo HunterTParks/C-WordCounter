@@ -13,6 +13,9 @@ namespace CProject.Objects
         RepeatCounter newRepeatCounter = new RepeatCounter(Request.Form["sentence"], Request.Form["word"]);
         return View["result.cshtml", newRepeatCounter];
       };
+      Get["/Error"] = _ => {
+        return View["ERROR.cshtml"];
+      };
     }
   }
 }
