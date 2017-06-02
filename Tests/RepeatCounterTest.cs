@@ -7,8 +7,8 @@ namespace CProject.Objects
     [Fact]
     public void RepeatCounter_singleWord_wood()
     {
-      RepeatCounter newRepeatCounter = new RepeatCounter("wood", "wood");
-      Assert.Equal("wood", newRepeatCounter.HowManyWords());
+      RepeatCounter newRepeatCounter = new RepeatCounter("wood wood wood", "wood");
+      Assert.Equal(3, newRepeatCounter.HowManyWords());
     }
   }
 }
